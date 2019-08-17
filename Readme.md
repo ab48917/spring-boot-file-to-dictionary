@@ -31,15 +31,21 @@ spring.datasource.password= <YOUR MYSQL PASSWORD>
 **3. Run the app using maven**
 
 You can install docker in your machine
+```bash
 1- run the docker build to build the images --
+```bash
 docker build -f Dockerfile -t spring-boot-dictionary .
 2- See if the image is properly created with tagName
+```bash
 docker images
 3- Run the image inside container
+```bash
 docker run -p 808:808 spring-boot-dictionary
 Once used, You can stop\restart or remove the container
 4- Get the container_id
+```bash
 docker ps -f name=spring-bbot-dictionary
+```bash
 5- docker stop container_id
 6- docker restart container_id
 
