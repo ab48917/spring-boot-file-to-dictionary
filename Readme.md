@@ -1,10 +1,10 @@
 ## Spring Boot File Upload / Download Rest API Example
 
 **Tutorial**: [
-1- This is used to store receive the files in REST post call and store to database
-2- Storing the files to database for data privacy and prtection act.
-3- Storing the file also helps to keep clients records handy at time of need
-4- Storing the words of files into dictionary and retriving on the fly as and when needed.
+1- This is used to receive the files in REST post call and store to database
+2- Storing the files to database for data privacy and protection act.
+3- Storing the file also helps to keep clients records handy at time of need.
+4- Storing the words of files into dictionary and retreiving on the fly as and when needed.
 5- Insertion takes O(N) and Retrieval takes O(N) 
    
 ]
@@ -29,6 +29,19 @@ spring.datasource.password= <YOUR MYSQL PASSWORD>
 ```
 
 **3. Run the app using maven**
+
+You can install docker in your machine
+1- run the docker build to build the images --
+docker build -f Dockerfile -t spring-boot-dictionary .
+2- See if the image is properly created with tagName
+docker images
+3- Run the image inside container
+docker run -p 808:808 spring-boot-dictionary
+Once used, You can stop\restart or remove the container
+4- Get the container_id
+docker ps -f name=spring-bbot-dictionary
+5- docker stop container_id
+6- docker restart container_id
 
 ```bash
 cd spring-boot-file-to-dictionary
