@@ -1,4 +1,4 @@
-## Spring Boot File Upload / Download Rest API Example
+## Spring Boot File Upload and Dictionary Generation Example
 
 **Tutorial**: [
 1- This is used to receive the files in REST post call and store to database
